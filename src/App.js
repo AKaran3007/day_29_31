@@ -6,7 +6,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Login from './Login';
+
 import Portal from './Portal';
 import Dashboard from './Dashboard';
 import Students from './Students';
@@ -17,13 +17,18 @@ import Teachers from './Teachers';
 import CreateTeacher from './CreateTeacher';
 import EditTeacher from './EditTeacher';
 import ViewTeacher from './ViewTeacher';
+import Login from './login_component';
+import SignUp from './signup_component';
+import UserDetails from './userDetails';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Login/>} />
+          <Route path="/signup" element={<SignUp/>} />
+          <Route path="/user" element={<UserDetails/>} />
           <Route path="/portal" element={<Portal />} >
 
             <Route path="dashboard" element={<Dashboard />} />
