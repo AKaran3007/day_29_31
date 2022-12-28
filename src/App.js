@@ -26,22 +26,22 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login/>} />
-          <Route path="/signup" element={<SignUp/>} />
-          <Route path="/user" element={<UserDetails/>} />
-          <Route path="/portal" element={<Portal />} >
+          {/* <Route path="/" element={<Login/>} />
+          <Route path="/signup" element={<SignUp/>} /> */}
+          {/* <Route path="/" element={<UserDetails/>} /> */}
+          <Route path="/" element={<Portal />} >
 
-            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="portal/dashboard" element={<Dashboard />} />
 
-            <Route path="students" element={<Students />} />
-            <Route path="create-student" element={<CreateStudent />} />
-            <Route path="students/edit/:id" element={<EditStudent />} />
-            <Route path="students/:id" element={<ViewStudent />} />
+            <Route path="portal/students" element={<Students />} />
+            <Route path="portal/create-student" element={<CreateStudent />} />
+            <Route path="portal/students/edit/:id" element={<EditStudent />} />
+            <Route path="portal/students/:id" element={<ViewStudent />} />
 
-            <Route path="teachers" element={<Teachers />} />
-            <Route path="create-teacher" element={<CreateTeacher />} />
-            <Route path="teachers/edit/:id" element={<EditTeacher />} />
-            <Route path="teachers/:id" element={<ViewTeacher />} />
+            <Route path="portal/teachers" element={<Teachers />} />
+            <Route path="portal/create-teacher" element={<CreateTeacher />} />
+            <Route path="portal/teachers/edit/:id" element={<EditTeacher />} />
+            <Route path="portal/teachers/:id" element={<ViewTeacher />} />
           </Route>
         </Routes>
       </BrowserRouter>
