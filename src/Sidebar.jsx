@@ -14,7 +14,7 @@ function Sidebar() {
                     <FontAwesomeIcon className="fas fa-3x fa-laugh-wink" icon={faLaughWink} />
 
                 </div>
-                <div className="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div className="sidebar-brand-text mx-3">Students & Teachers Management </div>
             </a>
 
             {/* <!-- Divider --> */}
